@@ -32,10 +32,10 @@ body {
     color: var(--color-white);
     background: var(---color-bg);
 }
-.nav_container {
+.container {
     width: var(--container-width-lg);
-    margin: 0 auto;
-}
+    margin: 0 auto;}
+
 section {
     padding: 6rem 0;
 }
@@ -131,10 +131,8 @@ header {
     gap: 5rem;
     height: 100%;
 }
-.header__left,
-.categories__left {
-    margin-left: 5rem;
-}
+
+
 .header__left p {
     margin: 1rem 0 2.4rem;
 }
