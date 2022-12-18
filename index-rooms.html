@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Campus</title>
     <link rel="stylesheet" href="style-rooms.css"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">    
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script-rooms.js"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js'></script> -->
 
-    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap'); </style>
 
 
     <section class="categories">
@@ -27,7 +31,6 @@
 
             <div class="categories__right">
                 <article class="category">
-                    <!-- <span class="category__icon"><img style="width: 13%;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAASBJREFUSEvtl9EJwjAQhi8pKj7YmgnUCXQE3cAV3EQ36QbiBHYER9AJglEQld5JHoRYNQZ7UoT2sbncd/9daP8IqOgRFXHhLfhszFQKGpYtDElsWnG8KuZ5Al+OegQolwDQLwt19qfNOJm5+Z7BxmwAyistFp3nOGgrtb2/fwCT1t1rJLVdJIJFK0nmZVRfD3pMJNc2hxA4aXRU9hLsC/ymABbwea+D1SNC1lYqYwFfzJ5CVec5Tv4fHKrWjWNpdQ0O6UDd6v/6coXMtBhTzzhoxt+01rcn+LdYJXhHBClXAYiYvnUg3EbA23p30bU+QsC80UkWXIo/u8wfmT3v4bJVnbTuR5G0pqzHqfYj+A6zhh6IRlxw7+HigoTkqezudAOLiGEu7L5FPQAAAABJRU5ErkJggg=="/></span> -->
                     <span class="category__icon">&#128214;</span>
                     <h5>Library</h5>
                     <p>Eight libraries offering books and journals for the university’s range of courses, with silent, quiet and group study spaces.</p>
@@ -51,65 +54,96 @@
                     <p>IT support for all students, Wi-Fi across the campuses, 24/7 computer rooms, laptop repairs and assistive technology.</p>
                 </article>
                 
-
-                <!-- <article class="category">
-                    <span class="category__icon">&#127946;</span>
-                    <h5>Pool</h5>
-                    <p>The swimming room has 5 pools, each 15m long and 2m deep. There are also showers and a Russian bath.</p>
-                </article>
-
-                <article class="category">
-                    <span class="category__icon">&#127926;</span>
-                    <h5>Art Studio</h5>
-                    <p>qwertyuiojhjghgffds</p>
-                </article> -->
             </div>
         </div>
 
-    </section>
-    
-
-    <section class="home" id="home">
-        
-        <div class="home-text">
-            <h1>Library</h1>
-            <h2>library consists of</h2>
-            <a href="#" class="btn1"></a>
-        </div>
-
-        <div class="home-img">
-            <!-- <img src="library.jpeg" alt=""> -->
-        </div>
-        
     </section>
 
 
 
     <div class="desc">
-        <div class="desc-container">
-            <img class="desc-img" src="library.jpeg" alt="">
+        <div class="desc-container" data-aos="zoom-in-right">
+            <img class="desc-img" src="01.jpg" alt="">
 
             <div class="desc-text-container">
                 <h1 class="desc-title">Library</h1>
 
                 <p class="desc-text">
-                    Welcome to the KBTU Library webpage. Ours is one of the modern university libraries in Kazakhstan. We use advanced high-tech presentation tools. The Virtual Library Tour below is a guide to the Library and provides information on the use of various library services. So let us start. 
+                    The library has several reading rooms for students and staff where visitors can find academic and research books as well as learning resources on engineering, architecture, arts  and humanities.
+                  
                 </p>
 
-                <button class="desc-button">Learn More</button>
             </div>
         </div>
 
-        <div class="desc-container" style="margin-top: 14.3em;">
-            <div class="desc-text-container">
-                <h1 class="desc-title">Library</h1>
+        <hr>
 
-                <p>The Scientific Library published a bibliographic index "Works of teachers and staff of the Kazakh-British Technical University (2002-2020)" for the 20th anniversary of KBTU JSC. </p>
-                <button class="desc-button">Learn More</button>
+        <div class="desc-container" style="margin-top: 10.3em;" data-aos="zoom-out-right">
+            <div class="desc-text-container">
+                <h1 class="desc-title">Laboratory</h1>
+
+                <p class="desc-text">
+                    Our laboratories are modern, fully-equipped spaces with state-of-the-art equipment which are used to provide training for our students.
+                    At Panda'Uni we have a variety of laboratories available to our students and faculty.
+                </p>
+                
             </div>
-            <img class="desc-img" src="library.jpg" alt="">
+            <img class="desc-img" src="lab.jpg" alt="">
+        </div>
+
+
+        <div class="desc-container" style="margin-top: 10.3em;" data-aos="zoom-in-right">
+            <img class="desc-img" src="comp.jpg" alt="">
+
+            <div class="desc-text-container">
+                <h1 class="desc-title">Computer Room</h1>
+
+                <p class="desc-text">
+                    There are more than 200 desktop computers and thin client models located across the libraries. Most of the computers are of general access and publicly available (non-classroom spaces). We also loan laptops and headphones at the service desk 2nd floor.                </p>
+
+            </div>
+        </div>
+
+
+        <div class="desc-container" style="margin-top: 10.3em;" data-aos="zoom-out-right">
+            <div class="desc-text-container">
+                <h1 class="desc-title">Sport Hall</h1>
+
+                <p class="desc-text">
+                    Our Sports Centre boasts not one, not two, but four Sports Halls! All equipped with competition level equipment and available to book online for a wide range of activities.                 </p>
+                
+            </div>
+            <img class="desc-img" src="sport.jpg" alt="" style="margin-bottom: 5%;">
         </div>
     </div>
+
+
+    
+    
+
+
+    <!-- <section class="footer">
+        <div class="footer-item social">
+            <p><a href="#"></a>Gmail</p>&#32;&#32;
+                <p><a href="#"></a>Instagram</p> &#32;&#32;
+                <p><a href="#"></a>What's Up</p>
+           </div>
+    </section> -->
+
+    <section class="footer-section">
+        <div class="footer-item">
+            <img style="width: 10%;" src="cute-robot-waving-hand-cartoon-illustration_138676-2744-removebg-preview.png" alt="">
+        </div>
+        
+    
+        <div class="footer-item">
+            <pre>© 2022 The President and Fellows of Panda College</pre>
+        </div>
+    </section>
+       
+
+   
+    
 
 </body>
 </html>
