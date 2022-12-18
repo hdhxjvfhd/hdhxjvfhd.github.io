@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
@@ -215,7 +219,89 @@
         </div>
     </section>
 
+
+
+
+    <section class="container testimonials__Container mySwiper">
+        <h2>Students Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://swgfl.org.uk/assets/images/school-l.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Lorem ipsum</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugiat nihil modi harum laudantium accusantium laboriosam!</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://swgfl.org.uk/assets/images/school-l.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Lorem ipsum</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugiat nihil modi harum laudantium accusantium laboriosam!</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://swgfl.org.uk/assets/images/school-l.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Lorem ipsum</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugiat nihil modi harum laudantium accusantium laboriosam!</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://swgfl.org.uk/assets/images/school-l.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Lorem ipsum</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugiat nihil modi harum laudantium accusantium laboriosam!</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="about.js"></script>
+    
+    <script>
+         var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+            600: {
+                slidesPerView: 2
+            }
+        }
+      });
+    </script>
 
 </body>
 </html>
