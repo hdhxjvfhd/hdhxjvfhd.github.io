@@ -366,7 +366,7 @@ header {
 /*  MOBILE ADAPTATION FOR PHONES */
 @media screen and (max-width: 600px) {
     .container {
-        /* width: var(--container-width-sm); */
+        width: var(--container-width-sm);
     }
     .nav__menu {
         right: 3%;
