@@ -1,3 +1,8 @@
+window.addEventListener('scroll', () => {
+  document.querySelector('nav').classList.toggle
+  ('window-scroll', window.scrollY > 100)
+})
+
 const images = ["teacher1.png", "teacher2.png", "teacher3.png", "teacher4.png",];
 const heading = ["Amanda Beck", "Tomas Mosley", "Juanita Nelson", "Dalton Myers"];
 const texts = [
@@ -16,7 +21,8 @@ window.onload = () => {
   p.textContent = texts[index];
   img.src = `${images[index]}`;
 };
-//Animation function
+
+
 function animate() {
   details.classList.add("animate");
   img.classList.add("animate");
@@ -33,7 +39,7 @@ function forward() {
   h1.textContent = heading[index];
   p.textContent = texts[index];
   img.src = `${images[index]}`;
-  //Animation
+ 
   animate();
 }
 function previous() {
@@ -44,6 +50,6 @@ function previous() {
   h1.textContent = heading[index];
   p.textContent = texts[index];
   img.src = `${images[index]}`;
-  //Animation
+  
   animate();
 }
