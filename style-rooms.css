@@ -58,6 +58,46 @@
     border-color: #fff;
 }
 
+/* ----------------------------------------------------------------- */
+
+
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+.window-scroll {
+    background: #78435b;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav button {
+    display: none;
+}
+.nav__menu {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.nav__menu a {
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+.nav__menu a:hover {
+    color: var(#424890);
+}
+
+/* ------------------------------------------------------------ */
+
 .categories{
     background: var(--color-bg1);
 }
@@ -84,7 +124,7 @@
 }
 
 .categories__right{
-    margin-top: 2%;
+    margin-top: 15%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
     gap: 1.25rem;
@@ -118,39 +158,6 @@
     font-size: 0.85rem;
 }
 
-.home{
-    width: 100%;
-    min-height: 50vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5rem;
-    align-items: center;
-    /* background-color: #1e1c2a; */
-    background-image: url('library.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100% 100%;
-    opacity: 0.5;
-    position: relative;
-}
-
-
-.home-img{
-    max-width: 100%;
-    width: 600px;
-    height: auto;
-}
-
-.home-text h1{
-    font-size: 5rem;
-    color: #fff;
-    margin: 5.5rem;
-}
-
-.home-text h2{
-    font-size: 2.25rem;
-    /* margin: 1rem 0 1rem; */
-}
 
 .btn1{
     display: inline-block;
@@ -164,6 +171,9 @@
     transform: scale(1.2) translateY(10px);
     transition: .4s;
 }
+
+
+/* ------------------------------------------------------------ */
 
 .desc{
     /* margin-top: 12.8em; */
@@ -252,6 +262,10 @@
         width: 90%;
     }
 
+    .categories__left{
+        margin-left: 2%;
+    }
+
     
 }
 
@@ -292,8 +306,13 @@
     .robot{
         width: 10%;
       }
+
+      .categories__right{
+        margin-top: 5%;
+    }
 }
 
+/* ------------------------------------------------------------------ */
 
 .footer-distributed {
     background-color: #292c2f;
