@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 90%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(bg.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-container{
+    width: 290px;
+    height: 450px;
+    padding: 0 1rem;
+    border-radius: 3px;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    background: rgb(174, 162, 192);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.overlay{
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    background: rgb(195, 186, 208);
+    content: '';
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    z-index: 2;
+    top: -20%;
+    /* display: none; */
+}
+
+.titleDiv{
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    width: 100%;
+    margin: 10px auto 5px;
+    text-align: center;
+    transform: translateY(-3rem);
+    z-index: 1000;
+}
+
+.title{
+    color: #000;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.rows{
+    display: grid;
+    position: relative;
+    gap: 1rem;
+    z-index: 1000;
+    transform: translateY(-1rem);
+    padding-bottom: 1rem;
+}
+
+.rows > label{
+    display: block;
+    padding-bottom: 285rem;
+    font-size: 13px;
+}
+
+input{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.636);
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.538);
+    font-weight: 500;
+    padding: .5rem;
+    border-radius: 3px;
+}
+
+::placeholder{
+   font-size: 10px; 
+}
+
+#submitBtn{
+    background: rgb(42, 40, 40);
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#submitBtn:hover{
+    background: rgba(226, 219, 219, 0.7);
+    color: #000;
+}
+
+.registerLink{
+    display: block;
+    font-size: 13px;
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.register_container{
+    width: 290px;
+    height: 570px;
+    padding: 0 1rem;
+    border-radius: 3px;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    background: rgb(174, 162, 192);;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.register_container > .overlay{
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    background: rgb(195, 186, 208);
+    content: '';
+    height: 650px;
+    width: 500px;
+    border-radius: 50%;
+    z-index: 2;
+    top: -20%;
+    /* display: none; */
+}
+
+.dashboard{
+    text-align: center;
+}
+
+.dashboard > h1{
+    font-size: 5rem;
+    color: palevioletred;
+    margin: 1rem 0;
+}
+
+.logOutBtn{
+    cursor: pointer;
+}
+
+a:hover{
+    background: rgb(221, 53, 109);
+    color: #000;
+}
+
+a{
+    padding: 10px 20px;
+    color: #fff;
+    background: #000;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+
+.success, .addedAccount{
+    text-align: center;
+    padding: 10px 20px;
+    background: green;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.fail{
+   position: relative;
+   z-index: 1000;
+   color: rgb(219, 24, 24);
+   top: -7%; 
+}
+
+.addedAccount{
+    margin: 0;
+    transform: translateY(100px);
+}
+
+
+@media screen and (max-width: 480px){
+    .dashboard > h1{
+        font-size: 3rem;
+    }
+}
