@@ -122,317 +122,147 @@ nav button {
     color: var(---color-bg2);
 }
 
-/* =========== HEADER CSS ============*/
-header {
-    position: relative;
-    top: 5rem;
-    overflow: hidden;
-    height: 70vh;
-    margin-bottom: 5rem;
-}
-.header__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 5rem;
-    height: 100%;
-}
-.header__left p {
-    margin: 1rem 0 2.4rem;
-}
 
+/* Achievements */
 
-/* =========== CATEGORIES CSS ============*/
-
-.categories {
-    background: var(---color-bg1);
-    height: 29rem;
+.about__achievements {
+    margin-top: 3rem;
 }
-.categories h1 {
-    line-height: 1;
-    margin-bottom: 3rem;
-}
-.categories__container {
+.about__achievements-container {
     display: grid;
     grid-template-columns: 40% 60%;
-    gap: 4rem;
+    gap: 5rem;
 }
-.categories__left {
-    margin-right: 2rem;
+.about__achievements-right > p {
+    margin: 1.6rem 0 2.5rem;
 }
-.categories__left p {
-    margin: 1rem 0 3rem;
-}
-.categories__right {
+.achievements__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.2rem;
+    gap: 1.5rem;
 }
-.category {
+.achievement__card {
+    background: var(---color-bg1);
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.achievement__card:hover {
     background: var(---color-bg2);
-    padding: 2rem;
-    border-radius: 2rem;
-    transition: var(--transition);   
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
 }
-.category:hover {
-    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 3);
-    z-index: 1;
-}
-.category:nth-child(2) .category__icon {
+.achievement__icon {
     background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
 }
-.category:nth-child(3) .category__icon {
+.achievement__card:nth-child(2) .achievement__icon {
     background: var(--color-success);
 }
-.category:nth-child(4) .category__icon {
-    background: var(--color-warning);
-}
-.category:nth-child(5) .category__icon {
-    background: var(--color-success);
-}
-.category__icon {
+.achievement__card:nth-child(3) .achievement__icon {
     background: var(--color-primary);
-    padding: 0.7rem;
-    border-radius: 0.9rem;
 }
-.category h5 {
-    margin: 2rem 0 1rem;
-}
-.category p {
-    font-size: 0.85rem;
+.achievement__card p {
+    margin-top: 1rem;
 }
 
-/* =========== COURSES CSS ============*/
-
-.courses {
-    margin-top: 10rem;
+/* TEAM CSS */
+.team {
+    background: var(---color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
 }
-.courses__container {
+.team__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-.course {
-    background: var(---color-bg1);
-    text-align: center;
+.team__member {
+    background: var(---color-bg2);
+    padding: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    position: relative;
+    overflow: hidden;
 }
-.course:hover {
+.team__member:hover {
     background: transparent;
     border-color: var(--color-primary);
 }
-.course__info {
-    padding: 2rem;
+.team__member-image img {
+    filter: saturate(0);
 }
-.course__info p {
-    margin: 1.2rem 0 2rem;
-    font-size: 0.9rem;
+.team__member:hover img {
+    filter: saturate(1);
 }
-
-/* =========== FAQs CSS ============*/
-.faqs {
-    background: var(---color-bg1);
-    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
-}
-.faqs__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-.faq {
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 1.4rem;
-    height: fit-content;
-    background: var(--color-primary);
-}
-.faq h4 {
-    font-size: 1rem;
-    line-height: 2.2;
-}
-.faq__icon {
-    align-self: flex-start;
-    font-size: 1.2rem;
-}
-.faq p{
-    margin-top: 0.8rem;
-    display: none;
-}
-.faq.open p {
-    display: block;
-}
-
-
-/* =========== testimonial CSS ============*/
-.testimonals {
-    overflow-x: hidden;
-    position: relative;
-    margin-bottom: 5rem;
-}
-.testimonal {
-    padding-top: 2rem;
-}
-.avatar {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 1rem;
-    border: 1rem solid var(---color-bg1);
-}
-.testimonial__info {
+.team__member-info * {
     text-align: center;
+    margin-top: 1.4rem;
 }
-.testimonial__body {
-    background: var(--color-primary);
-    padding: 2rem;
-    margin-top: 3rem;
-    position: relative;
+.team__member-info p {
+    color: var(--color-light);
 }
-.testimonial__body::before {
-    content: "";
-    display: block;
-    background: linear-gradient(135deg, transparent, var(--color-primary), var(--color-primary), var(--color-primary));
-    width: 3rem;
-    height: 3rem;
+.team__member-socials {
     position: absolute;
-    left: 50%;
-    top: -1.5rem;
-    transform: rotate(45deg);
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3)
+    /* transition: var(--transition) */
+}
+.team__member:hover .team__member-socials{
+    right: 0;
+}
+.team__member-socials a {
+    padding: 1rem;
 }
 
-
-/*  MOBILE ADAPTATION FOR TABLETS */
+/* MOBILE ADAPTATION FOR TABLETS */
 @media screen and (max-width: 1024px) {
-    .container {
-        width: var(--container-width-md);
+    .about__achievements {
+        margin-top: 2rem;
     }
-    h1 {
-        font-size: 2.2rem;
+    .about__achievements-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
     }
-    h2 {
-        font-size: 1.7rem;
+    .about__achievements-left {
+        width: 80%;
+        margin: 0 auto;
     }
-    h3 {
-        font-size: 1.4rem;
+    .team__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
-    h4 {
-        font-size: 1.2rem;
-    }
-    
-    nav button {
-        display: inline-block;
-        background: transparent;
-        font-size: 1.8rem;
-        color: var(--color-white);
-        cursor: pointer;
-    }
-
-    nav button#close-menu-btn {
-        display: none;
-    }
-
-    .nav__menu {
-        position: fixed;
-        top: 5rem;
-        right: 5%;
-        height: fit-content;
-        width: 18rem;
-        flex-direction: column;
-        gap: 0;
-        display: none;
-    }
-
-    .nav__menu li {
-        width: 100%;
-        height: 5.8rem;
-    }
-    .nav__menu li a {
-        background: var(--color-primary);
-        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
-        width: 100%;
-        height: 100%;
-        display: grid;
-        place-items: center;
-    }
-    .nav__menu li a:hover {
-        background: var(---color-bg2);
-        color: var(--color-white);
+    .team__member {
+        padding: 1rem;
     }
 }
 
-/*  MOBILE ADAPTATION FOR PHONES */
-@media screen and (max-width: 600px) {
-    .container {
-        width: var(--container-width-sm);
-    }
-    .nav__menu {
-        right: 3%;
-    }
-    header {
-        height: 100vh;
-    }
-    .header__container {
-        grid-template-columns: 1fr;
-        text-align: center;
-        margin-top: 0;
-    }
-
-    .header__left p {
-        margin-bottom: 1.3rem;
-    }
-
-    .categories__right {
+/* MOBILE ADAPTATION FOR PHONES */
+@media screen and (max-width: 600px){
+    .achievements__cards {
         grid-template-columns: 1fr 1fr;
         gap: 0.7rem;
     }
-
-    .category {
-        padding: 1rem;
-        border-radius: 1rem;
+    .team__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
     }
-
-    .category__icon {
-        margin-top: 4px;
-        display: inline-block;
+    .team__member {
+        padding: 0;
     }
-
-    .courses__container {
-        grid-template-columns: 1fr;
+    .team__member p {
+        margin-bottom: 1.5rem;
     }
-
-    .testimonial__body {
-        padding: 1.2rem;
-    }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
