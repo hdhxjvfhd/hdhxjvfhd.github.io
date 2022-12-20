@@ -140,6 +140,9 @@ header {
 .header__left p {
     margin: 1rem 0 2.4rem;
 }
+.header__right img {
+    border-radius: 15px;
+}
 
 
 /* =========== CATEGORIES CSS ============*/
@@ -364,7 +367,7 @@ header {
 }
 
 /*  MOBILE ADAPTATION FOR PHONES */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .container {
         width: var(--container-width-sm);
     }
@@ -457,7 +460,7 @@ header {
 
 
 
-
+ */
 
 
 
